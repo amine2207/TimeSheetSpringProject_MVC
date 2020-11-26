@@ -45,7 +45,7 @@ public class TimeSheetSpringProjectMvcApplicationTests {
 		
 		ies.affecterDepartementAEntreprise(departement1.getId().intValue(), entreprise.getId().intValue());
 				
-		//ies.getAllDepartementsNamesByEntreprise(23);
+		ies.getAllDepartementsNamesByEntreprise(entreprise.getId().intValue());
 		
 		Employe employe = new Employe("Yosra","Arbi","Yosra.arbi@ssiiconsulting.tn",1,Role.chefDartement);
 	
@@ -60,7 +60,7 @@ public class TimeSheetSpringProjectMvcApplicationTests {
 		
 		iems.affecterEmployeADepartement(employe.getId().intValue(), departement.getId().intValue());
 		
-	    iems.getEmployePrenomById(12);  
+	    iems.getEmployePrenomById(employe.getId().intValue());  
 		
 		iems.getAllEmployeNamesJPQL();
 		
